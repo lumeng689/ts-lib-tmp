@@ -1,0 +1,22 @@
+{
+  "name": "ts-lib-tmp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "build:ts": "tsc",
+    "build:es6": "tsc -P tsconfig.json --module ES6 --outDir dist/es6",
+    "build:commjs": "browserify dist/hello.js --standalone myLib -o dist/web/sdk.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browserify": "^16.2.3",
+    "ts-loader": "^5.3.3",
+    "typescript": "^3.3.3333",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.2.3"
+  }
+}
