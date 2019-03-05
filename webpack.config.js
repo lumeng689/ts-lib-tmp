@@ -18,6 +18,16 @@ module.exports = {
   output: {
     path: __dirname + "/dist/web",//打包后的文件存放的地方
     filename: "sdk.js", //打包后输出文件的文件名
-    libraryTarget: 'window'
-  }
+    libraryTarget: 'window',
+  },
+  // output: {
+  //   path: __dirname + "/dist/umd",//打包后的文件存放的地方
+  //   filename: "sdk.js", //打包后输出文件的文件名
+  //   library: {
+  //     root: 'MyLibrary',
+  //     amd: 'my-library',
+  //     commonjs: 'my-common-library'
+  //   },
+  //   libraryTarget: 'umd'
+  // }
 }
